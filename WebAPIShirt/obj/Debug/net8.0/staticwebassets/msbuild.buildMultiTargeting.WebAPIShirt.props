@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\WebAPIShirt.props" />
+</Project>

@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|c:\\file simone\\sviluppo\\3_corsi\\12_api_frankliu\\webapishirt\\webapishirt\\controllers\\shirtscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|solutionrelative:webapishirt\\controllers\\shirtscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|c:\\file simone\\sviluppo\\3_corsi\\12_api_frankliu\\webapishirt\\webapishirt\\model\\validation\\shirt_ensurecorrectsizingattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|solutionrelative:webapishirt\\model\\validation\\shirt_ensurecorrectsizingattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|c:\\file simone\\sviluppo\\3_corsi\\12_api_frankliu\\webapishirt\\webapishirt\\model\\shirt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|solutionrelative:webapishirt\\model\\shirt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|c:\\file simone\\sviluppo\\3_corsi\\12_api_frankliu\\webapishirt\\webapishirt\\webapishirt.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|solutionrelative:webapishirt\\webapishirt.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|c:\\file simone\\sviluppo\\3_corsi\\12_api_frankliu\\webapishirt\\webapishirt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A70885B-D1E9-4D2B-842C-4AFAB8C46F7B}|WebAPIShirt\\WebAPIShirt.csproj|solutionrelative:webapishirt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 516,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shirt_EnsureCorrectSizingAttribute.cs",
+              "DocumentMoniker": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\Model\\Validation\\Shirt_EnsureCorrectSizingAttribute.cs",
+              "RelativeDocumentMoniker": "WebAPIShirt\\Model\\Validation\\Shirt_EnsureCorrectSizingAttribute.cs",
+              "ToolTip": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\Model\\Validation\\Shirt_EnsureCorrectSizingAttribute.cs",
+              "RelativeToolTip": "WebAPIShirt\\Model\\Validation\\Shirt_EnsureCorrectSizingAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwBYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T05:39:40.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shirt.cs",
+              "DocumentMoniker": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\Model\\Shirt.cs",
+              "RelativeDocumentMoniker": "WebAPIShirt\\Model\\Shirt.cs",
+              "ToolTip": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\Model\\Shirt.cs",
+              "RelativeToolTip": "WebAPIShirt\\Model\\Shirt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T15:56:58.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\Program.cs",
+              "RelativeDocumentMoniker": "WebAPIShirt\\Program.cs",
+              "ToolTip": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\Program.cs",
+              "RelativeToolTip": "WebAPIShirt\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T15:35:38.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShirtsController.cs",
+              "DocumentMoniker": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\Controllers\\ShirtsController.cs",
+              "RelativeDocumentMoniker": "WebAPIShirt\\Controllers\\ShirtsController.cs",
+              "ToolTip": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\Controllers\\ShirtsController.cs",
+              "RelativeToolTip": "WebAPIShirt\\Controllers\\ShirtsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T15:29:16.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WebAPIShirt.csproj",
+              "DocumentMoniker": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\WebAPIShirt.csproj",
+              "RelativeDocumentMoniker": "WebAPIShirt\\WebAPIShirt.csproj",
+              "ToolTip": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\WebAPIShirt.csproj",
+              "RelativeToolTip": "WebAPIShirt\\WebAPIShirt.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-31T15:28:41.728Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 516,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1366,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
