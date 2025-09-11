@@ -93,5 +93,5 @@ x64/
 *.v2
 *.bin
 /.vs
-/WebAPIShirt/bin
-/WebAPIShirt/obj
+/WebAPIShirt/bin/
+/WebAPIShirt/obj/
