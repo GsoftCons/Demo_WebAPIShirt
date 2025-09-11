@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using WebAPIShirt.Controllers.Filters;
 using WebAPIShirt.Model;
+using WebAPIShirt.Model.Repositories;
 
 namespace WebAPIShirt.Controllers
 {
@@ -7,14 +9,6 @@ namespace WebAPIShirt.Controllers
     [Route("api/[controller]")]
     public class ShirtsController : ControllerBase
     {
-        private List<Shirt> shirts = new List<Shirt>()
-        {
-            new Shirt {ShirtId = 1, Brand = "MyBrand", Color = "Blue", Gender="Men", Price = 30, Size = 10},
-            new Shirt {ShirtId = 2, Brand = "MyBrand", Color = "Black", Gender="Men", Price = 35, Size = 12},
-            new Shirt {ShirtId = 3, Brand = "Your Brand", Color = "Pink", Gender="Women", Price = 28, Size = 8},
-            new Shirt {ShirtId = 4, Brand = "Your Brand", Color = "Yello", Gender="Women", Price = 30, Size = 9}
-        };
-
         [HttpGet]
         public string GetShirts()
         {
@@ -22,16 +16,10 @@ namespace WebAPIShirt.Controllers
         }
 
         [HttpGet("{id}")]
+        [Shirt_ValidateShirtIdFilterAttribute]
         public IActionResult GetShirtById(int id)
         {
-            if (id <= 0)
-                return BadRequest();
-
-            var shirt = shirts.FirstOrDefault(x => x.ShirtId == id);
-            if (shirt == null)
-                return NotFound();
-
-            return Ok(shirt);
+            return Ok(ShirtRepository.GetShirtById(id));
         }
 
         [HttpPost]
