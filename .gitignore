@@ -92,3 +92,7 @@ x64/
 *.vsidx
 *.v2
 *.bin
+/.vs
+/WebAPIShirt/bin
+/WebAPIShirt/obj
+/WebAPIShirt/obj

@@ -8,25 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Simone\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\gabol\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\WebAPIShirt.csproj",
+      "projectUniqueName": "C:\\Sviluppo\\0_Corsi\\WebApiShirt\\WebAPIShirt\\WebAPIShirt.csproj",
       "projectName": "WebAPIShirt",
-      "projectPath": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\WebAPIShirt.csproj",
-      "packagesPath": "C:\\Users\\Simone\\.nuget\\packages\\",
-      "outputPath": "C:\\File Simone\\Sviluppo\\3_corsi\\12_API_FrankLiu\\WebAPIShirt\\WebAPIShirt\\obj\\",
+      "projectPath": "C:\\Sviluppo\\0_Corsi\\WebApiShirt\\WebAPIShirt\\WebAPIShirt.csproj",
+      "packagesPath": "C:\\Users\\gabol\\.nuget\\packages\\",
+      "outputPath": "C:\\Sviluppo\\0_Corsi\\WebApiShirt\\WebAPIShirt\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Simone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gabol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -53,7 +51,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -77,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

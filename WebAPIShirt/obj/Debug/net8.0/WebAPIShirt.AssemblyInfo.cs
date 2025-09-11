@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebAPIShirt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f5ee1c901e18ff0f95a4602de2dcb985f3757ecb")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebAPIShirt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebAPIShirt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
