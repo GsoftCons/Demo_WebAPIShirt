@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using WebAPIShirt.Controllers.Filters;
+using WebAPIShirt.Controllers.Filters.ActionFilters;
+using WebAPIShirt.Controllers.Filters.ExeptionFilters;
 using WebAPIShirt.Model;
 using WebAPIShirt.Model.Repositories;
 
@@ -16,35 +17,41 @@ namespace WebAPIShirt.Controllers
         }
 
         [HttpGet("{id}")]
-        [Shirt_ValidateShirtIdFilterAttribute]
+        [Shirt_ValidateShirtIdFilter]
         public IActionResult GetShirtById(int id)
         {
             return Ok(ShirtRepository.GetShirtById(id));
         }
 
         [HttpPost]
+        [Shirt_ValidateCreateShirtFilter]
         public IActionResult CreateShirt([FromBody] Shirt shirt)
         {
-            if (shirt == null) return BadRequest();
-
-            var existingShirt = ShirtRepository.GetShirtByProperties(shirt.Brand, shirt.Gender, shirt.Color, shirt.Size);
-            if (existingShirt != null) return BadRequest();
-
             ShirtRepository.AddShirt(shirt);
 
-            return CreatedAtAction(nameof(GetShirtById), new { id = shirt.ShirtId },shirt);
+            return CreatedAtAction(nameof(GetShirtById), new { id = shirt.ShirtId }, shirt);
         }
 
         [HttpPut("{id}")]
-        public string UpdateShirt(int id)
+        [Shirt_ValidateShirtIdFilter]
+        [Shirt_ValidateUpdateShirtFilter]
+        [Shirt_HandleUpdateExceptionFilter]
+        public IActionResult UpdateShirt(int id, Shirt shirt)
         {
-            return $"Shirt with ID: {id} updated";
+            if (id != shirt.ShirtId)
+                return BadRequest();
+
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public string DeleteShirt(int id)
+        [Shirt_ValidateShirtIdFilter]
+        public IActionResult DeleteShirt(int id)
         {
-            return $"Shirt with ID: {id} deleted";
+            var shirt = ShirtRepository.GetShirtById(id);
+            ShirtRepository.DeleteShirt(id);
+
+            return Ok(shirt);
         }
     }
 }
