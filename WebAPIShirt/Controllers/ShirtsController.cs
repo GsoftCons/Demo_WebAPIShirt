@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebAPIShirt.Controllers.Filters.ActionFilters;
 using WebAPIShirt.Controllers.Filters.ExeptionFilters;
+using WebAPIShirt.Data;
 using WebAPIShirt.Model;
 using WebAPIShirt.Model.Repositories;
 
@@ -10,30 +11,39 @@ namespace WebAPIShirt.Controllers
     [Route("api/[controller]")]
     public class ShirtsController : ControllerBase
     {
+        private readonly ApplicationDBContext db;
+
+        public ShirtsController(ApplicationDBContext db)
+        {
+            this.db = db;
+            
+        }
+
         [HttpGet]
         public IActionResult GetShirts()
         {
-            return Ok(ShirtRepository.GetAllShirts());
+            return Ok(db.Shirts.ToList());
         }
 
         [HttpGet("{id}")]
-        [Shirt_ValidateShirtIdFilter]
+        [TypeFilter(typeof(Shirt_ValidateShirtIdFilterAttribute))]
         public IActionResult GetShirtById(int id)
         {
-            return Ok(ShirtRepository.GetShirtById(id));
+            return Ok(HttpContext.Items["shirt"]);
         }
 
         [HttpPost]
-        [Shirt_ValidateCreateShirtFilter]
+        [TypeFilter(typeof(Shirt_ValidateCreateShirtFilterAttribute))]
         public IActionResult CreateShirt([FromBody] Shirt shirt)
         {
-            ShirtRepository.AddShirt(shirt);
+            this.db.Shirts.Add(shirt);
+            this.db.SaveChanges();
 
             return CreatedAtAction(nameof(GetShirtById), new { id = shirt.ShirtId }, shirt);
         }
 
         [HttpPut("{id}")]
-        [Shirt_ValidateShirtIdFilter]
+        [TypeFilter(typeof(Shirt_ValidateShirtIdFilterAttribute))]
         [Shirt_ValidateUpdateShirtFilter]
         [Shirt_HandleUpdateExceptionFilter]
         public IActionResult UpdateShirt(int id, Shirt shirt)
@@ -45,7 +55,7 @@ namespace WebAPIShirt.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Shirt_ValidateShirtIdFilter]
+        [TypeFilter(typeof(Shirt_ValidateShirtIdFilterAttribute))]
         public IActionResult DeleteShirt(int id)
         {
             var shirt = ShirtRepository.GetShirtById(id);
