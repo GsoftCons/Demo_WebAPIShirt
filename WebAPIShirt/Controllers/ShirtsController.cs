@@ -3,7 +3,6 @@ using WebAPIShirt.Controllers.Filters.ActionFilters;
 using WebAPIShirt.Controllers.Filters.ExeptionFilters;
 using WebAPIShirt.Data;
 using WebAPIShirt.Model;
-using WebAPIShirt.Model.Repositories;
 
 namespace WebAPIShirt.Controllers
 {
@@ -16,7 +15,7 @@ namespace WebAPIShirt.Controllers
         public ShirtsController(ApplicationDBContext db)
         {
             this.db = db;
-            
+
         }
 
         [HttpGet]
@@ -45,11 +44,17 @@ namespace WebAPIShirt.Controllers
         [HttpPut("{id}")]
         [TypeFilter(typeof(Shirt_ValidateShirtIdFilterAttribute))]
         [Shirt_ValidateUpdateShirtFilter]
-        [Shirt_HandleUpdateExceptionFilter]
+        [TypeFilter(typeof(Shirt_HandleUpdateExceptionFilterAttribute))]
         public IActionResult UpdateShirt(int id, Shirt shirt)
         {
-            if (id != shirt.ShirtId)
-                return BadRequest();
+            var shirtToUpdate = HttpContext.Items["shirt"] as Shirt;
+            shirtToUpdate.Brand = shirt.Brand;
+            shirtToUpdate.Price = shirt.Price;
+            shirtToUpdate.Size = shirt.Size;
+            shirtToUpdate.Color = shirt.Color;
+            shirtToUpdate.Gender = shirt.Gender;
+
+            db.SaveChanges();
 
             return NoContent();
         }
@@ -58,10 +63,12 @@ namespace WebAPIShirt.Controllers
         [TypeFilter(typeof(Shirt_ValidateShirtIdFilterAttribute))]
         public IActionResult DeleteShirt(int id)
         {
-            var shirt = ShirtRepository.GetShirtById(id);
-            ShirtRepository.DeleteShirt(id);
+            var shirtToUpdate = HttpContext.Items["shirt"] as Shirt;
 
-            return Ok(shirt);
+            db.Shirts.Remove(shirtToUpdate);
+            db.SaveChanges();
+
+            return Ok(shirtToUpdate);
         }
     }
 }
