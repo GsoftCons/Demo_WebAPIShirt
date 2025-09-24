@@ -91,10 +91,18 @@ namespace WebApp.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteShirt([FromForm] int id)
         {
-            await webApiExecuter.InvokeDelete($"shirts/{id}");
-            return RedirectToAction(nameof(Index));
-        }
+            try
+            {
 
+                await webApiExecuter.InvokeDelete($"shirts/{id}");
+                return RedirectToAction(nameof(Index));
+            }
+            catch (WebApiException ex)
+            {
+                HandleWebApiException(ex);
+                return View(nameof(Index), await webApiExecuter.InvokeGet<List<Shirt>>("shirts"));
+            }
+        }
         private void HandleWebApiException(WebApiException ex)
         {
             if (ex.ErrorResponse != null && ex.ErrorResponse.Errors != null && ex.ErrorResponse.Errors.Count > 0)
